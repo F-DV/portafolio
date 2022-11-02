@@ -1,0 +1,11 @@
+.contact-container{
+  display: flex;
+  position: relative;
+  height: 98vh;
+  width: 100vw;
+  align-items: flex-start;
+  justify-content:center ;
+}
+.content{
+  position: absolute;
+}

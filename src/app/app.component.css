@@ -1,0 +1,25 @@
+.main-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  overflow: hidden;
+}
+.perfil-image{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-bottom: 150px;
+  box-shadow: 0.5px 0.5px 80px black;
+}
+.perfil-image img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+

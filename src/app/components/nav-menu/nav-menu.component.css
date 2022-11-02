@@ -1,0 +1,22 @@
+.menu-container{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0.5px 0.5px 5px black;
+  border-radius: 5px;
+  background-color: #101c36;
+  z-index: 1;
+}
+.menu-container a{
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+.menu-container a:hover{
+  transform: scale(2);
+  transition: all .3s;
+}

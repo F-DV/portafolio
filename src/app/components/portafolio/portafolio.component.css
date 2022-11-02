@@ -1,0 +1,45 @@
+.portafolio-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color:#1a2e5c ;
+}
+.portafolio-container .title{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  height: 60vh;
+  width: 80vw;
+  border: 1px solid white;
+}
+.porta1{
+
+  background-color: red;
+}
+.porta2{
+
+  background-color: blueviolet;
+}
+.porta3{
+
+  background-color: blue;
+}
+
+@media (min-width: 600px){
+  .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    height: 90vh;
+    width: 80vw;
+    border: 1px solid white;
+  }
+}

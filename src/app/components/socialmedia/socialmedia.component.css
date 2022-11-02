@@ -1,0 +1,70 @@
+.socialmedia-list{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  width: 150px;
+  height: 50px;
+  top: 90vh;
+  right: 60vw;
+}
+.socialmedia-list li{
+  list-style: none;
+}
+.github{
+  width: 50px;
+  height: 50px;
+}
+.linkedin{
+  width: 50px;
+  height: 50px;
+}
+
+.twiter{
+  width: 50px;
+  height: 50px;
+}
+.github img{
+  width: 50px;
+  height: 50px;
+}
+.linkedin img{
+  width: 50px;
+  height: 50px;
+}
+.twiter img{
+  width: 50px;
+  height: 50px;
+}
+@media (min-width: 600px){
+  .socialmedia-list{
+    flex-direction: column;
+    top: 20vh;
+    right: 70vw;
+  }
+  .github :hover{
+    rotate: 90deg;
+    transition: 1s;
+  }
+  .linkedin :hover{
+    rotate: 90deg;
+    transition: 1s;
+  }
+  .twiter :hover{
+    rotate: 90deg;
+    transition: 1s;
+  }
+}
+@media (max-width: 600px){
+  .github :hover{
+    height: 70px;
+    transition: 1s;
+  }
+  .linkedin :hover{
+    height: 70px;
+    transition: 1s;
+  }
+  .twiter :hover{
+    height: 70px;
+    transition: 1s;
+  }
+}

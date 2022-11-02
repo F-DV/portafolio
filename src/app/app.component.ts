@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portafolio';
+  isActive: boolean= false;
+
+  toggleMenu(isOpen: boolean){
+    this.isActive = isOpen;
+  }
+
+
+
 }

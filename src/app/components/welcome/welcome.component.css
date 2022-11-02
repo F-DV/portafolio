@@ -1,0 +1,144 @@
+.game-lettering-container{
+  color: #cacaca;
+
+
+
+}
+.game-lettering{
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.game-lettering .screed-1 span{
+  display: block;
+  width: 39ch;
+  background: #121f3d;
+  animation: maquina 2s steps(39),
+              parpadeo 0.5s infinite alternate;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+.game-lettering .screed-2 span{
+  display: block;
+  width: 39ch;
+  background: #121f3d;
+  color: transparent;
+  animation: maquina1 2s steps(39),
+              parpadeo 0.5s infinite alternate;
+  animation-delay: 2s;
+  animation-fill-mode:forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.game-lettering .screed-3 span{
+  display: block;
+  width: 39ch;
+  background: #121f3d;
+  color: transparent;
+  animation: maquina3 2s steps(39),
+              parpadeo 0.5s infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode:forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.game-lettering .screed-4 span{
+  display: block;
+  width: 39ch;
+  background: #121f3d;
+  color: transparent;
+  animation: maquina4 2s steps(39),
+              parpadeo 0.5s infinite alternate;
+  animation-delay: 6s;
+  animation-fill-mode:forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.game-lettering .screed-5 span{
+  display: block;
+  width: 39ch;
+  background: #121f3d;
+  color: transparent;
+  animation: maquina5 2s steps(39),
+              parpadeo 0.5s infinite alternate;
+  animation-delay: 8s;
+  animation-fill-mode:forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes maquina {
+  from {
+    width: 0;
+    border-right: 1px solid white;
+  }
+  to{
+    width: 39ch;
+    border-right: 1px solid white;
+  }
+}
+@keyframes maquina1 {
+  from {
+    width: 0;
+    color: #cacaca;
+  }
+  to{
+    width: 39ch;
+    color: #cacaca;
+  }
+}
+@keyframes maquina2 {
+  from {
+    width: 0;
+    border-right: 1px solid white;
+    color:  #cacaca;
+  }
+  to{
+    width: 40ch;
+    border-right: 1px solid white;
+    color: #cacaca;
+  }
+}
+@keyframes maquina3 {
+  from {
+    width: 0;
+    color:  #cacaca;
+  }
+  to{
+    width: 41ch;
+    color: #cacaca;
+  }
+}
+@keyframes maquina4 {
+  from {
+    width: 0;
+    color:  #cacaca;
+
+  }
+  to{
+    width: 39ch;
+    color: #cacaca;
+
+  }
+}
+@keyframes maquina5 {
+  from {
+    width: 0;
+    color:  #cacaca;
+    border-right: 1px solid white;
+  }
+  to{
+    width: 39h;
+    color: #cacaca;
+    border-right: 1px solid white;
+  }
+}
+@keyframes parpadeo {
+  50%{
+    border-color: transparent;
+  }
+
+}
+
+
