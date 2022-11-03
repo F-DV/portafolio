@@ -1,0 +1,12 @@
+.menu-container{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  /*background-color: #101c36;*/
+  background-color: gray;
+  z-index: 1;
+}

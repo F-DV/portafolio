@@ -1,0 +1,49 @@
+.menu-button-mobile{
+  display: flex;
+  position: fixed;
+  top: 87vh;
+  right: 8vw;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0.5px 0.5px 5px black;
+  background-color: rgb(31, 58, 150);
+  border: 1px solid black;
+  .menu-icon{
+    width: 100%;
+    height: 100%;
+  }
+  .menu-button-mobile :hover{
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+  }
+}
+.menu-button{
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0.5px 0.5px 5px black;
+  background-color: rgb(31, 58, 150);
+  border: 1px solid black;
+  .menu-icon{
+    width: 100%;
+    height: 100%;
+  }
+  .menu-button :hover{
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+  }
+
+}
+
+@media screen and (min-width: 40em){
+  .menu-button-mobile{
+    display: none;
+  }
+  .menu-button{
+    display: flex;
+  }
+}

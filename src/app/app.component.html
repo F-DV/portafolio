@@ -1,17 +1,22 @@
-<app-nav (openMenu)="toggleMenu($event)"></app-nav>
-
-<div class="menu" *ngIf="isActive == true">
-  <app-nav-menu></app-nav-menu>
+<app-nav (openMenuNav)="toggleMenu($event)"></app-nav>
+<div class="button-menu">
+  <app-menu-button (openMenu)="toggleMenu($event)"></app-menu-button>
 </div>
-
-<app-socialmedia></app-socialmedia>
-
-<div class="main-container">
-  <div class="perfil-image">
-    <img src="../assets/felipe.jpeg" alt="Foto-FelipeQuiceno">
-  </div>
-  <app-welcome class="welcome-message"></app-welcome>
+<div class="social">
+  <app-socialmedia></app-socialmedia>
+</div>
+<div class="side-menu" [class.active]="activeMenu">
+  <app-nav-menu (close)="toggleMenu($event)"></app-nav-menu>
+</div>
+<app-aboutme></app-aboutme>
+<div class="side-menu" [class.active]="activeMenu">
+  <app-side-menu-background></app-side-menu-background>
 </div>
 <app-portafolio></app-portafolio>
+<div class="side-menu" [class.active]="activeMenu">
+  <app-side-menu-background></app-side-menu-background>
+</div>
 <app-contact></app-contact>
+
+
 

@@ -1,5 +1,19 @@
-<div class="nav-container">
-  <div class="nav-menu-container">
-    <img class="menu-icon" (click)="onOpenMenu()" src="../../../assets/menu.png" alt="menuIcon">
+<div class="show-mobile">
+  <div>
+    <app-socialmedia></app-socialmedia>
+    <p>fqucieno1@misena.edu.co</p>
+  </div>
+</div>
+<div class="hide-mobile">
+  <div>
+    <p>fqucieno1@misena.edu.co</p>
+    <div class="navegacion">
+      <ul>
+        <li><a href="#">Acerca de mi</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <app-menu-button (openMenu)="toggleMenu($event)"></app-menu-button>
   </div>
 </div>

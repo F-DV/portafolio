@@ -10,6 +10,10 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { SocialmediaComponent } from './components/socialmedia/socialmedia.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ImgPerfilComponent } from './components/img-perfil/img-perfil.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
+import { SideMenuBackgroundComponent } from './components/side-menu-background/side-menu-background.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { ContactComponent } from './components/contact/contact.component';
     SocialmediaComponent,
     PortafolioComponent,
     ContactComponent,
+    ImgPerfilComponent,
+    AboutmeComponent,
+    MenuButtonComponent,
+    SideMenuBackgroundComponent,
 
   ],
   imports: [

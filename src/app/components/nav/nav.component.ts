@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,14 +6,13 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-  @Output() openMenu = new EventEmitter<boolean>();
 
-  isOpenMenu:boolean = false;
+  //Comunica al padre para que abra el menu
+  @Output() openMenuNav = new EventEmitter<boolean>();
 
-  onOpenMenu(){
-    this.isOpenMenu = !this.isOpenMenu;
-    console.log(this.isOpenMenu);
-    this.openMenu.emit(this.isOpenMenu);
+  constructor(){};
+
+  toggleMenu(event:boolean){
+    this.openMenuNav.emit(event);
   }
-
 }

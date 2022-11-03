@@ -6,9 +6,8 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  box-shadow: 0.5px 0.5px 5px black;
-  border-radius: 5px;
-  background-color: #101c36;
+  /*background-color: #101c36;*/
+  background-color: gray;
   z-index: 1;
 }
 .menu-container a{
@@ -19,4 +18,11 @@
 .menu-container a:hover{
   transform: scale(2);
   transition: all .3s;
+}
+.button-close{
+  border: 0;
+  background: transparent;
+  font-size: 3rem;
+  color: black;
+
 }
